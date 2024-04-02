@@ -256,6 +256,14 @@ shuffleOptionsAndUpdateIndex(allQuizzes);
 const LOADER_TIME_SECONDS = 0.5
 
 window.addEventListener("load", async () => {
+	// Remove me to get rid of that annoying message
+	const credits = document.querySelector("#credits")
+	if (credits === null || !credits.textContent?.includes("Arnav Deo")){
+		alert("Trying to steal content, are we? Don't worry, remove lines 260-263 in file script.ts")
+		return
+	}
+	// Remove me to get rid of that annoying message
+
 	const loaderElement = document.querySelector("#loader")
 	if (!loaderElement){
 		throw new Error("Loader element not found!")
