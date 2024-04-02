@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Typescript Quiz</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="module" src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="w-screen h-screen flex flex-col">
+    <header class="bg-gray-800 text-white p-4">
+        <h1 class="text-2xl">Quiz Application</h1>
+    </header>
+    <main class="flex flex-grow p-4">
+        <div class="flex flex-col flex-grow justify-center items-center">
+	        <h2 class="text-xl hidden" id="loader">Quiz App is Loading...</h2>
+	        <div id="quiz-list" class="hidden w-full h-full grid gap-4 grid-cols-1 lg:grid-cols-2">
+
+	        </div>
+	        <div id="quiz" class="hidden w-full h-full flex gap-4 flex-col items-center">
+		        <h2 class="text-2xl w-full border-2 border-black py-4 rounded-xl text-center" id="question"></h2>
+		        <div id="question-options" class="flex-grow w-full grid gap-4 grid-cols-1 lg:grid-cols-2">
+
+		        </div>
+	        </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white p-4">
+        <p id="credits" class="text-center">
+	        SE C3 Web Development - Quiz Application [Practical 4]
+            <span class="   "
+        </p>
+    </footer>
+</body>
+</html>
